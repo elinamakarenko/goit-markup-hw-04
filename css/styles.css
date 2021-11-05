@@ -22,6 +22,7 @@ img {
 body {
   font-family: "Roboto", sans-serif;
 }
+
 .container {
   width: 1200px;
   padding-left: 15px;
@@ -128,10 +129,16 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
+  margin-right: 30px;
 }
 .header-mail:hover,
 .header-mail:focus {
   color: var(--accent-color);
+}
+.header-icon{
+  fill: inherit;
+  margin-right: 10px;
+ vertical-align: middle;
 }
 .header-logo {
   font-family: Raleway;
@@ -176,6 +183,23 @@ body {
   padding-top: 94px;
   padding-bottom: 94px;
 }
+.about-icons{
+  display: flex;
+}
+.about-icons-list{
+  width: 270px;
+  height: 120px;
+  background-color:#F5F4FA;
+  border-radius: 4px;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.about-icons-list:not(:last-child){
+  margin-right: 30px;
+}
+
 .about-list {
   display: flex;
 }
