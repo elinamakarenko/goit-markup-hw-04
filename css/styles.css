@@ -9,7 +9,8 @@
 p,
 h1,
 h2,
-h3 {
+h3,
+h4 {
   margin: 0;
 }
 ul {
@@ -119,6 +120,8 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
+  display: flex;
+  align-items: center;
 }
 .header-tel:hover  .header-icon,
 .header-tel:focus  .header-icon {
@@ -135,6 +138,8 @@ body {
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
   margin-right: 30px;
+  display: flex;
+  align-items: center;
 }
 .header-mail:hover .header-icon,
 .header-mail:focus .header-icon {
@@ -163,7 +168,7 @@ body {
 .hero {
   text-align: center;
   background-image: linear-gradient(
-      rgba(25, 33, 117, 0.4),
+      rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
     url(../img/hero-img.jpg);
@@ -197,7 +202,7 @@ body {
   display: flex;
 }
 .about-icons-list{
-  width: 270px;
+  width: 100%;
   height: 120px;
   background-color:#F5F4FA;
   border-radius: 4px;
@@ -279,7 +284,8 @@ body {
   margin-right: 30px;
 }
 .team-item-descr {
-  margin-top: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 .team-name {
   font-weight: 500;
@@ -362,7 +368,8 @@ margin-bottom: 50px;
   margin-left: -30px;
   margin-top: -30px;
 }
-.portfolio-item {
+.portfolio-item { 
+  display: block;
   flex-basis: calc((100% - 3 * 30px) / 3);
   margin-left: 30px;
   margin-top: 30px;
@@ -398,6 +405,7 @@ margin-bottom: 50px;
 }
 .footer-cont{
   display: flex;
+  align-items: baseline;
 }
 .footer-left{
   margin-right: 70px;
@@ -448,7 +456,6 @@ line-height: 1.14;
 letter-spacing: 0.03em;
 text-transform: uppercase;
 color: var(--primary-title-color);
-margin-top: 12px;
   margin-bottom: 20px;
 }
 
@@ -457,8 +464,7 @@ margin-top: 12px;
 }
 .social-list-team{
  margin-top: 16px;
- margin-bottom: 30px;
- margin-left: 32px;
+ justify-content: center;
 }
 .social-icon{
   fill: #AFB1B8;
